@@ -1,0 +1,8 @@
+﻿{
+  "EsClientAddress": "http://10.6.0.194:9200",
+  "TenantID": "9001",
+  "ExcludeFields": ["UserFavorites","UserPermissions","PSPermissions","DerUserPermissions","DerPSPermissions","Essences","ReviewRequestMember","ReviewMemberData","FolderDetailsDerivedAttribute","CastNCrew","S_GENRE","CastNCrew.MAINTITLE","CastNCrew.S_TG_ARTIST_NAME","CastNCrew.S_ROLE","CastNCrew.S_TG_CHARACTER","CastNCrew.S_AI_PER_EMOTION","S_TG_KEYWORDS"],
+  "IncludeFields": [ "OBJID"],
+  "OutputFilepath": "",
+  "BatchSize": "50000"
+}
