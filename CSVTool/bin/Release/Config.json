@@ -1,9 +1,9 @@
 {
-  "EsClientAddress": "http://10.6.0.194:9200",
-  "TenantID": "6000",   
-  "ExcludeFields": ["UserFavorites","UserPermissions","PSPermissions","DerUserPermissions","DerPSPermissions","Essences","ReviewRequestMember","ReviewMemberData","FolderDetailsDerivedAttribute","CastNCrew","S_GENRE","CastNCrew.MAINTITLE","CastNCrew.S_TG_ARTIST_NAME","CastNCrew.S_ROLE","CastNCrew.S_TG_CHARACTER","CastNCrew.S_AI_PER_EMOTION","S_TG_KEYWORDS"],
-  "IncludeFields": [ "OBJID","CreatedOn","ModifiedOn","ObjId"],
-  "OutputFilepath": "ASSETS.csv",
+  "EsClientAddress": "http://localHost:9200",
+  "TenantID": "ORDERS",   
+  "ExcludeFields": ["FieldA","FieldB"],
+  "IncludeFields": [ "FieldC"],
+  "OutputFilepath": "OrdersCompleted.csv",
   "Query":"{
 \"query\": {
 \"bool\": {
@@ -17,10 +17,10 @@
 }
 },
 \"from\": 0,
-\"size\": 20,
+\"size\": 100000,
 \"sort\": [ ],
 \"aggs\": { }
 }",
-  "IndexType":"ASSETS,FOLDERS,SEGMENTS,RULES",
+  "IndexType":"Completed",
   "BatchSize": "50000"
 }
