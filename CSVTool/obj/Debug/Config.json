@@ -1,0 +1,26 @@
+{
+  "EsClientAddress": "http://localHost:9200",
+  "TenantID": "ORDERS",   
+  "ExcludeFields": ["FieldA","FieldB"],
+  "IncludeFields": [ "FieldC"],
+  "OutputFilepath": "OrdersCompleted.csv",
+  "Query":"{
+\"query\": {
+\"bool\": {
+\"must\": [
+{
+\"match_all\": { }
+}
+],
+\"must_not\": [ ],
+\"should\": [ ]
+}
+},
+\"from\": 0,
+\"size\": 100000,
+\"sort\": [ ],
+\"aggs\": { }
+}",
+  "IndexType":"Completed",
+  "BatchSize": "50000"
+}
